@@ -221,8 +221,8 @@
       </div>
     </section>
   </main>
-  <button class="music-btn locked-content" id="musicBtn" type="button">♫ Nhạc nền Muichiro</button>
-  <audio id="bgMusic" loop preload="none"><source src="assets/music.mp3" type="audio/mpeg"></audio>
+  <button class="music-btn locked-content" id="musicBtn" type="button">♫ Music</button>
+  <audio id="bgMusic" loop preload="none"><source src="assets/haha.mp3" type="audio/mpeg"></audio>
   <footer>PHUONG'S GRADUATION · CLASS OF 2026 · 14.11.2026</footer>
   <script>
     const envelope = document.getElementById('envelope');
@@ -241,7 +241,7 @@
     musicBtn.addEventListener('click', async () => {
       if (music.paused) {
         try { await music.play(); musicBtn.textContent = '♫ Tắt nhạc'; }
-        catch (e) { musicBtn.textContent = '♫ Chưa có file Muichiro.mp3'; }
+        catch (e) { musicBtn.textContent = '♫ Chưa có file'; }
       } else { music.pause(); musicBtn.textContent = '♫ Bật nhạc'; }
     });
   </script>
